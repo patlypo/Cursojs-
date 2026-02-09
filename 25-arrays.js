@@ -20,8 +20,19 @@ document.write("<ul>");
 for(var i = 0; i<=lenguajes.length; i++){
     document.write("<li>" + lenguajes[i] + "</li>");
 }
+    IN
+    for(let lenguaje in lenguajes){
+        document.write("<li>" + lenguajes[i] + "</li>");
+
+    }
 */
 lenguajes.forEach((elemento)=>{
     document.write("<li>" + lenguajes[i] + "</li>");
 })
 document.write("</ul>");
+
+//Busquedas
+var precios = ["10", "20","50","80","12"];
+
+var busqueda = precios.some(precio => precio >= 80);
+console.log(busqueda);
