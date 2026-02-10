@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM, eventos</title>
+    <script src="js/32-ejerciciodom.js"></script>
+    <style>
+        .box{
+            width: 200px;
+            height: 160px;
+            float: left;
+            margin: 15px;
+        }
+        .dashed{
+            border: 2px dashed black;
+            padding: 3px;
+        }
+    </style>
 </head>
 <body>
     <h1>Formulario</h1>
@@ -14,23 +27,39 @@
         -Tener un boton que al darle click no muestre los datos actuales   
     -->
 
-    <form action="" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre">
-        <br>
+    <div class="box">
+        <form action="#" method="POST" id="formulario" onsubmit="return false;">
+            <label for="cmpo_nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+            <br>
 
-        <label for="apellido">Apellido:</label>
-        <input type="text" name="apellido" id="apellido> 
-        <br><br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido">
+            <br>
+            <label for="edadd">Edad:</label>
+            <input type="number" name="edadd" id="edadd">
+            <br>
 
-        <label for="edad">Edad:</label>
-        <input type="text" name="edad" id="edad">
-        <br/>
+            <input type="submit" value="Enviar" id="submit">
+            <br/>
+        </form>
+    </div>
 
-        <input type="submit" value="Enviar" id="submit">
-        <br/>
-    </form>
+    <div class="box dashed">
+        <h3>Info</h3>
+        <hr>
+        <p id ="p_nombre">
+            Nombre <span></span>
+        </p>
+        <p id ="p_apellido">
+            Apellido <span></span>
+        </p>
+        <p id ="p_edad">
+            Edad <span></span>
+        </p>
+
+    </div>
     
-    <script type="text/javascript" src="js/32-ejerciciodom.js"></script>
+    
 </body>
 </html>

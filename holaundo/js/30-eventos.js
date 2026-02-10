@@ -17,7 +17,7 @@ boton.addEventListener('click', function(){
 });
 //MOuSE OVER
 boton.addEventListener('mouseover', function(){
-    boton.style.background ="rgba(31, 50, 216, 0.27)";
+    this.style.background ="rgba(31, 50, 216, 0.27)";
 });
 //Mouseout
 boton.addEventListener('mouseout',function(){
