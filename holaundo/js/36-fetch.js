@@ -1,6 +1,6 @@
 'use strict'
 //Fetch (ajax) y peticiones a servicios/apis rest
-
+var div_usuarios = document.querySelector('#usuarios');
 var usuarios = [];
 
 fetch('https://jsonplaceholder.typicode.com/users')
@@ -8,4 +8,10 @@ fetch('https://jsonplaceholder.typicode.com/users')
     .then(data =>{
         usuarios = data;
         console.log(usuarios);
+
+        usuarios.map((data,i)=>{
+            let nombre = document.createElement('h3');
+            nombre.innerHTML = i +" " + data.name + " ";
+            div_usuarios.appendChild(nombre);
+        });
     });
