@@ -29,4 +29,10 @@ $(document).ready(function(){
     //Selectores de atributos
     $('[title= "google"]').css("background", "#ccc");
     $('[title="linkeind"]').css("background", "blue");
+
+    //otros
+    $('p, a').addClass('margen-superior');
+
+    var busqueda = $('#caja').find('.resultado');
+    console.log(busqueda);
 });

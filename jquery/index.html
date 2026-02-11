@@ -14,18 +14,34 @@
         .zebra{
             border: 2px dashed black;
         }
+        .margen-superior{
+            display: block;
+            margin-top: 45px;
+        }
+        .resultado{
+            border-bottom: 2px solid green;
+        }
     </style>
 </head>
 <body>
 
     <ul>
-        <li><a href="#">google</a> </li>
-        <li><a href="https://www.linkedin.com/jobs/search/?currentJobId=4366967972&f_WT=2&origin=JOBS_HOME_LOCATION_SUGGESTION">linkedin</a></li>
+        <li><a href="#" title="google">google</a> </li>
+        <li><a href="https://www.linkedin.com/jobs/search/?currentJobId=4366967972&f_WT=2&origin=JOBS_HOME_LOCATION_SUGGESTION" title="linkeind">linkedin</a></li>
     </ul>
     <p id="rojo" class="zebra">Ejercicio de jquery</p>
     <p id="amarillo" class="sin_borde">Practicando selectores</p>
     <p id="verde" class="zebra">parrafo verde</p>
 
     <p class="sin_borde">parrafo blanco</p>
+    <div id="caja">
+        <p>soy una caja</p>
+        <ul>
+            <li>Elemtneot 1</li>
+            <li class="resultado">Elemento 2</li>
+        </ul>
+        <span class="resultado">soy un span</span>
+
+    </div>
 </body>
 </html>
