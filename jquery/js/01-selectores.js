@@ -12,6 +12,21 @@ $(document).ready(function(){
     var miclase = $(".zebra").css("padding", "3px");
     $(".sin_borde").click(function(){
         console.log("clivk");
-        $(this).addClass("zebra");
+        miclase.addClass("zebra");
     });
+
+    //Selectores de etiqueta 
+    var parrafos =$("p").css("cursor", "pointer");
+
+    parrafos.click(function(){
+        if ($(this).hasClass("zebra")) {
+            $(this).removeClass("zebra");    
+        }else{
+             $(this).addClass("zebra");
+        }       
+    });
+
+    //Selectores de atributos
+    $('[title= "google"]').css("background", "#ccc");
+    $('[title="linkeind"]').css("background", "blue");
 });
