@@ -9,15 +9,18 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous">
     </script>
-
-    <script>
-        $(document).ready(function(){
-            console.log("jQuery y la web cargadpso");
-
-        });
-    </script>
+    <script type="text/javascript" src="js/01-selectores.js"></script>
+    <style>
+        .zebra{
+            border: 2px dashed black;
+        }
+    </style>
 </head>
 <body>
-    
+    <p id="rojo" class="zebra">Ejercicio de jquery</p>
+    <p id="amarillo" class="sin_borde">Practicando selectores</p>
+    <p id="verde" class="zebra">parrafo verde</p>
+
+    <p class="sin_borde">parrafo blanco</p>
 </body>
 </html>
