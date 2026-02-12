@@ -1,9 +1,16 @@
 $(document).ready(function(){
-    
+     $("#mostrar").hide();
+
     $("#mostrar").click(function(){
-        $("#caja").show();
+        $(this).hide();
+        $("#ocultar").show();
+        //$("#caja").show('medium');
+        $('#caja').fadeTo('slow',1);
     });
     $("#ocultar").click(function(){
-        $("#caja").hide();
+        $(this).hide();
+         $("#mostrar").show();
+        //$("#caja").hide('medium');
+        $("#caja").fadeTo('slow',0);
     });
 });
