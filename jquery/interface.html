@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface</title>
+    <!-- jquery library-->
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous">
+    </script>
+    <!-- JQUERY UI library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js" 
+            integrity="sha512-MSOo1aY+3pXCOCdGAYoBZ6YGI0aragoQsg1mKKBHXCYPIWxamwOE7Drh+N5CPgGI5SA9IEKJiPjdfqWFWmZtRA==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- estilos css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/themes/base/jquery-ui.min.css" 
+            integrity="sha512-TFee0335YRJoyiqz8hA8KV3P0tXa5CpRBSoM0Wnkn7JoJx1kaq1yXL/rb8YFpWXkMOjRcv5txv+C6UluttluCQ==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/06-interface.js"></script>
+    <style>
+        .elemento{
+            width: 300px;
+            height: 200px;
+            border: 4px solid black;
+            background: lightblue;
+            margin: 20px;
+            float: left;
+        }
+        .lista-selecionable li{
+            width: 80%;
+            padding: 20px;
+            list-style: none;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+        ul .ui-selecting{
+            background: gray;
+        }
+        ul .ui-selected{
+            background: rgb(157, 157, 221);
+        }
+        #elemento-movido{
+            width: 100px;
+            height: 100px;
+            border: 4px solid red;
+        }
+        #area{
+            width: 300px;
+            height: 300px;
+            border: 4px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>jQuery UI</h1>
+    <div id="elemento-movido"></div>
+    <div id="area">
+
+    </div>
+
+    <ul class="lista-selecionable">
+        <li>Gta5</li>
+        <li>Need for seed</li>
+        <li>super mario</li>
+    </ul>
+
+    <div class="elemento">
+        soy elemento de la web 1
+    </div>
+    <div class="elemento">
+        soy elemento de la web 2
+    </div>
+    <div class="elemento">
+        soy elemento de la web 3
+    </div>
+    
+</body>
+</html>
