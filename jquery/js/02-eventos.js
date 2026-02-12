@@ -43,4 +43,13 @@ $(document).ready(function(){
         $(this).css('border','3px solid transparent ');
     });
 
+    $(document).mousemove(function(){
+        console.log("En x: " + event.clientX);
+        console.log("En y: " + event.clientY);
+        $('body').css('cursor','none');
+        $("#sigueme").css("left", event.clientX)
+                    .css("top", event.clientY);
+
+    });
+
 });
