@@ -31,5 +31,9 @@ $(document).ready(function(){
         $(".caja-efectos").effect("explode",4000);
     });
 
+    //Widgets
+    ///tooltips
+    $(document).tooltip();
+
 
 });
