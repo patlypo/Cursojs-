@@ -1,0 +1,12 @@
+body{
+    background: #ccc;
+}
+#logo{
+    background: #235E2D;
+}
+#menu ul li:hover{
+    background: #235E2D;
+}
+.button-more{
+    background: #235E2D;
+}

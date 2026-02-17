@@ -22,7 +22,6 @@ body{
     font-size: 27px;
     letter-spacing: 4px;
     line-height: 75px;
-    background: #235E2D;
     color: white;
     text-align: center;
     width: 385px;
@@ -47,9 +46,7 @@ body{
     display: inline-block;
     transition: all 300ms;
 }
-#menu ul li:hover{
-    background: #235E2D;
-}
+
 #menu a{
     display: block;
     color: white;
@@ -85,7 +82,6 @@ body{
     text-align: center;
     display: block;
     padding: 15px;
-    background: #235E2D;
     color: white;
     text-decoration: none;
     margin-block: 8px;
@@ -153,4 +149,29 @@ footer{
     height: 100%;
     width: 100%;
     
+}
+#selector-theme{
+    position: fixed;
+    top: 40%;
+    background: rgba(51, 51, 51, 0.5);
+    width: 50px;
+    height: 100px;
+}
+#to-green, #to-red, #to-blue{
+    width: 30px;
+    height: 25px;
+    border: 1px solid white;
+    display: block;
+    margin: 0px auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#to-green{
+    background: #235E2D;
+}
+#to-red{
+    background: #CA3413;
+}
+#to-blue{
+    background: #1f87c4;
 }
