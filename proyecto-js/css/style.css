@@ -62,7 +62,7 @@ body{
 .post{
     padding: 7px;
 }
-.post h2{
+h2{
     font-size: 30px;
     color: #333;
 }
@@ -174,4 +174,18 @@ footer{
 }
 #to-blue{
     background: #1f87c4;
+}
+.subir{
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: right;
+}
+#box{
+    width: 60%;
+    float: left;
+    margin-top: 40px;
+}
+#acordeon{
+    margin-top: 20px;
 }

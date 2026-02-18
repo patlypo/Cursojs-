@@ -1,4 +1,6 @@
 $(document).ready(function(){
+  //Slider 
+  if (window.location.href.indexOf('index') > -1) {
     $('.bxslider').bxSlider({
       mode: 'fade',
       captions: false,
@@ -6,6 +8,8 @@ $(document).ready(function(){
       responsive:true,
       pager:false
     });
+  }
+  
 
     //posts
     var posts = [
@@ -33,6 +37,7 @@ $(document).ready(function(){
       }
     ];
 
+    if (window.location.href.indexOf('index') > -1) {
     posts.forEach((item, index)=>{
       var post = `
         <article class="post">
@@ -45,6 +50,7 @@ $(document).ready(function(){
       `;
       $("#posts").append(post);
     });
+  }
 
     //Selector de estilos
     var theme = $("#theme");
@@ -57,4 +63,39 @@ $(document).ready(function(){
     $("#to-blue").click(function(){
       theme.attr("href", "css/blue.css");
     });
+
+    //Scroll arriba de la web
+    $('.subir').click(function(){
+      e.preventDefault();
+      $('html,body').animate({
+        scrollTop: 0
+      }, 500);
+
+      return false;
+    });
+
+    //login falso
+    $('#login').submit(function(){
+      var form_name = $("#form_name").val();
+      localStorage.setItem("form_name", form_name);
+    });
+    
+    var form_name = localStorage.getItem("form_name");
+    if (form_name != null && form_name != "undefined" ) {
+      var about_parrafo = $("#about p");
+        about_parrafo.html("<br><strong> Bienvenido, " + form_name + "</strong>");
+        about_parrafo.append("<a href='#' id='logout'>Cerrar sesión</a>");
+        $("#login").hide();
+
+        $("#logout").click(function(){
+          localStorage.clear();
+          location.reload();
+        })
+      
+    }
+
+    if(window.location.href.indexOf('about') > -1){
+      $("#acordeon").accordion();
+    }
+    
 });
